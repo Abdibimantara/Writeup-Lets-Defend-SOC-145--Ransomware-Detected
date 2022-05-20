@@ -4,7 +4,7 @@ Writeup simple let's defend SOC 145 Ransomware Detected. Monitoring, Log Managem
 ## Source link
 
 https://app.letsdefend.io/
-## Third party tools
+## third party tools
 - Any run : https://app.any.run/
 - Virus Total :https://www.virustotal.com/gui/home/search
 - Malwaoverview with Trigae : https://github.com/alexandreborges/malwoverview
@@ -12,10 +12,7 @@ https://app.letsdefend.io/
 
 
 ## Details Alert 
-On May 23, 2021, at 7.32 Pm, the SOC Lets Defend team found an alert that appeared on the Monitoring menu. The result of the explanation of the event contains a notification of an attempt to spread ransomware on a client environment. The event was detected with id 92 and source ip 172.16.17.88. see the user is the host "MarkPRD". According to the information we got, the file indicated as ransomware is ab.exe with the hash value shown in the image below.
-![image](https://user-images.githubusercontent.com/43168046/169572259-bfd5e0a3-422c-454d-ba85-43afadeecf47.png)
-
-
+On May 23, 2021, at 7.32 Pm, the SOC lets Defend team found an alert that appears on the Monitoring menu. The result of the event description contains a notification of an attempt to spread ransomware on a client environment. The event was detected with id 92 and source ip 172.16.17.88. It is known that the user is the master "MarkPRD". According to the information we got, the file indicated as ransomware is ab.exe with the hash value shown in the image below. Don't forget, the reason we focus on analyzing the event is the "high" severity value.
 ## Related
 
 Here are some related projects
