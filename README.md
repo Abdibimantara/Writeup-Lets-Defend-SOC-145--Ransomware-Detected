@@ -40,9 +40,9 @@ Continuing the process of gathering information, we enter the "Endpoint Security
 
 ## The Second Stage
 
-After knowing the details of the event, we enter into the analysis process. Starting with the stage of gathering detailed information.
+Through the information that was obtained, the SOC Team concluded that the device indicated by the malware was not in quarantine. so we have to do the analysis immediately so as not to cause problems.
 
-![image](https://user-images.githubusercontent.com/43168046/169574880-cff29123-30c3-445b-bf32-0b9fa13ebf63.png)
+![image](https://user-images.githubusercontent.com/43168046/169581092-2196e2e0-8b7e-4a9e-9a58-b0d113121592.png)
 
 We started collecting information through "Log Management" and "Endpoint Security". More detailed information about "Log Management" & "Endpoint Security" can be read at the following link
 - https://www.humio.com/glossary/log-management/
