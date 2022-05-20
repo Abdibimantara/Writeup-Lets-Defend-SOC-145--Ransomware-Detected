@@ -32,6 +32,23 @@ We started collecting information through "Log Management" and "Endpoint Securit
 Click the "Log Management" menu, we search by keyword source ip 172.16.17.88. The search results show 2 communication traffic on that ip. where the destination ip consists of 81.169.145.105 & 192.64.119.190. This indicates that the host can still communicate with other users.
 ![image](https://user-images.githubusercontent.com/43168046/169577229-6e2654dc-7e3a-4210-9c5c-d7a032038385.png)
 
+### Endpoint Security Result
+
+Continuing the process of gathering information, we enter the "Endpoint Security" menu. The SOC team uses the same keyword, namely 172.16.17.88. Through the "Endpoint Security" menu, we get detailed information such as Hostname, IP Address, OS version, Client/Server and Device Status. Based on the results of the check, we conclude that the malware is *not Quarantined* .
+
+![image](https://user-images.githubusercontent.com/43168046/169579671-bbee3c36-e8e0-4602-9dbc-d2b218f65b09.png)
+
+## The Second Stage
+
+After knowing the details of the event, we enter into the analysis process. Starting with the stage of gathering detailed information.
+
+![image](https://user-images.githubusercontent.com/43168046/169574880-cff29123-30c3-445b-bf32-0b9fa13ebf63.png)
+
+We started collecting information through "Log Management" and "Endpoint Security". More detailed information about "Log Management" & "Endpoint Security" can be read at the following link
+- https://www.humio.com/glossary/log-management/
+- https://www.trellix.com/en-us/security-awareness/endpoint/what-is-endpoint-security.html#:~:text=Endpoint%20security%20is%20the%20practice,the%20cloud%20from%20cybersecurity%20threats..
+
+
 
 ## Running Tests
 
