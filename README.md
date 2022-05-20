@@ -4,7 +4,7 @@ Writeup simple let's defend SOC 145 Ransomware Detected. Monitoring, Log Managem
 ## Source link
 
 https://app.letsdefend.io/
-## third party tools
+## Third party tools
 - Any run : https://app.any.run/
 - Virus Total :https://www.virustotal.com/gui/home/search
 - Malwaoverview with Trigae : https://github.com/alexandreborges/malwoverview
@@ -13,25 +13,24 @@ https://app.letsdefend.io/
 
 ## Details Alert 
 On May 23, 2021, at 7.32 Pm, the SOC lets Defend team found an alert that appears on the Monitoring menu. The result of the event description contains a notification of an attempt to spread ransomware on a client environment. The event was detected with id 92 and source ip 172.16.17.88. It is known that the user is the master "MarkPRD". According to the information we got, the file indicated as ransomware is ab.exe with the hash value shown in the image below. Don't forget, the reason we focus on analyzing the event is the "high" severity value.
-## Related
 
-Here are some related projects
-
-[Awesome README](https://github.com/matiassingers/awesome-readme)
+![image](https://user-images.githubusercontent.com/43168046/169574634-88951164-9284-4b44-a5eb-866b4ddbcd6c.png)
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+## The First Stage
 
+After knowing the details of the event, we enter into the analysis process. Starting with the stage of gathering detailed information.
 
-## Usage/Examples
+![image](https://user-images.githubusercontent.com/43168046/169574880-cff29123-30c3-445b-bf32-0b9fa13ebf63.png)
 
-```javascript
-import Component from 'my-project'
+We started collecting information through "Log Management" and "Endpoint Security". More detailed information about "Log Management" & "Endpoint Security" can be read at the following link
+- https://www.humio.com/glossary/log-management/
+- https://www.trellix.com/en-us/security-awareness/endpoint/what-is-endpoint-security.html#:~:text=Endpoint%20security%20is%20the%20practice,the%20cloud%20from%20cybersecurity%20threats..
 
-function App() {
-  return <Component />
-}
-```
+### Log Management Result
+
+Click the "Log Management" menu, we search by keyword source ip 172.16.17.88. The search results show 2 communication traffic on that ip. where the destination ip consists of 81.169.145.105 & 192.64.119.190. This indicates that the host can still communicate with other users.
+![image](https://user-images.githubusercontent.com/43168046/169577229-6e2654dc-7e3a-4210-9c5c-d7a032038385.png)
 
 
 ## Running Tests
