@@ -44,9 +44,9 @@ Through the information that was obtained, the SOC Team concluded that the devic
 
 ![image](https://user-images.githubusercontent.com/43168046/169581092-2196e2e0-8b7e-4a9e-9a58-b0d113121592.png)
 
-We started collecting information through "Log Management" and "Endpoint Security". More detailed information about "Log Management" & "Endpoint Security" can be read at the following link
-- https://www.humio.com/glossary/log-management/
-- https://www.trellix.com/en-us/security-awareness/endpoint/what-is-endpoint-security.html#:~:text=Endpoint%20security%20is%20the%20practice,the%20cloud%20from%20cybersecurity%20threats..
+### Analysis with ANYRUN
+anyrun is one of the many third-party SOC tools that are useful in helping analyze malware. The concept of these tools is a sandbox, so the analysis is based on dynamic analysis.
+![image](https://user-images.githubusercontent.com/43168046/169577229-6e2654dc-7e3a-4210-9c5c-d7a032038385.png)
 
 
 
