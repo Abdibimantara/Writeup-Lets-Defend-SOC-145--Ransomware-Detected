@@ -118,8 +118,6 @@ Source ip : 172.16.17.88
 hash : 0b486fe0503524cfe4726a4022fa6a68
 Website : avaddonbotrxmuyl.onion
 
-![image](https://user-images.githubusercontent.com/43168046/169662673-f9209101-1c8b-4654-be5e-773c68e1e5d7.png)
-
 After confirming that the ab.bin file is malware, the SOC Team needs to provide a record for the event.
 
 ![image](https://user-images.githubusercontent.com/43168046/169662717-c66a911d-3948-4c8f-a8ab-df72ec3355ea.png)
