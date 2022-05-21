@@ -1,6 +1,6 @@
 # Writeup Lets Defend SOC 145 - Ransomware Detected
 
-Writeup simple let's defend SOC 145 Ransomware Detected. Monitoring, Log Management, Case Management, Endpoint Security.
+Simple Writeup let's defend SOC 145 Ransomware Detected. Monitoring, Log Management, Case Management, Endpoint Security.
 ## Source link
 
 https://app.letsdefend.io/
