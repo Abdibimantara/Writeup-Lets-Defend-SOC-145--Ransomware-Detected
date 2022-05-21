@@ -48,6 +48,33 @@ Through the information that was obtained, the SOC Team concluded that the devic
 anyrun is one of the many third-party SOC tools that are useful in helping analyze malware. The concept of these tools is a sandbox, so the analysis is based on dynamic analysis.
 ![image](https://user-images.githubusercontent.com/43168046/169577229-6e2654dc-7e3a-4210-9c5c-d7a032038385.png)
 
+when we tried to run the ab.bin file which we successfully downloaded. We get information as shown in the image below:
+
+
+![image](https://user-images.githubusercontent.com/43168046/169650695-d7beec92-1b8d-4639-a873-7dbef5d3d136.png)
+![image](https://user-images.githubusercontent.com/43168046/169650716-261a8051-9575-466c-a4f3-2f907cd95476.png)
+![image](https://user-images.githubusercontent.com/43168046/169650723-a2f2cb54-9866-410b-bd4f-19cb627353c8.png)
+
+The ab.bin file will run the process behind the scenes. Through the anyrun dashboard, we found as many as 247 file modifications. After we check in more detail. There are lots of delete system backup commands.
+
+### Analysis with Virus Totals
+VirusTotal is an Alphabet product that analyzes file, URL, domain and IP address searches to detect malware and other types of threats, and automatically shares them with the security community.
+
+To view the VirusTotal report, you need to send the attached file, IP address, or domain to VirusTotal. 
+
+we try to do a report search on the online data. this search is based on the hash value we already know.
+
+![image](https://user-images.githubusercontent.com/43168046/169657968-23c22722-7dc3-4494-8f02-4ffe6b8fadaa.png)
+
+it can be seen that in the total virus, the hash is indicated to have a bad reputation. of 59/69. other than that the data we got was updated since 5 days ago.  
+
+the information we get from virus totals is almost the same as anyrun. where the ab.bin file runs the delete process behind the scenes
+
+![image](https://user-images.githubusercontent.com/43168046/169658200-f1a3803a-b2b2-4498-b702-265fbad7529c.png)
+
+### Analysis with Malwoverview
+Malwoverview is a first response tool used for threat hunting and offers intel information from Virus Total, Hybrid Analysis, URLHaus, Polyswarm, Malshare, Alien Vault, Malpedia, ThreatCrowd, Malware Bazaar, ThreatFox, Triage and it is able to scan Android devices against VT.
+
 
 
 ## Running Tests
