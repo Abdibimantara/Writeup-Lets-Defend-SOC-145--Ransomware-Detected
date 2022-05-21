@@ -103,28 +103,35 @@ and don't forget we also found important notes left by the attacker, namely the 
 
 ![image](https://user-images.githubusercontent.com/43168046/169662231-1cc30bb6-62b5-4912-8b83-a5e0c4f2324a.png)
 
+## The third stage
+
+The SOC team is required to carry out threat hunting, whether there are other devices or users related to the IP of the device indicated as avaddon malware.
+
+![image](https://user-images.githubusercontent.com/43168046/169662433-ca3c3973-5830-4c97-9a68-9d7625462551.png)
+
+Go back to the "log management" menu, it appears that the IP has communicated with 2 other IP devices. so we do a "request host contained" process to prevent any other communication.
+
+![image](https://user-images.githubusercontent.com/43168046/169662565-c367f848-fe29-4698-92f0-fa5c441dc005.png)
+
+from the results of the previous analysis we found several indicators of compromise, namely:
+Source ip : 172.16.17.88
+hash : 0b486fe0503524cfe4726a4022fa6a68
+Website : avaddonbotrxmuyl.onion
+
+![image](https://user-images.githubusercontent.com/43168046/169662673-f9209101-1c8b-4654-be5e-773c68e1e5d7.png)
+
+After confirming that the ab.bin file is malware, the SOC Team needs to provide a record for the event.
+
+![image](https://user-images.githubusercontent.com/43168046/169662717-c66a911d-3948-4c8f-a8ab-df72ec3355ea.png)
+
+## The fourth stage
+After the event analysis has been successfully carried out and the results are obtained. So the event will be closed by the SOC Team by providing a description of the results of the analysis and small notes.
+
+![image](https://user-images.githubusercontent.com/43168046/169662763-f5acfcc2-87a2-49f2-b358-09858e675f22.png)
 
 
-## Running Tests
+## Reference
+- https://www.joaoantunes.net/writeups/letsdefend_soc145/
+- https://bdure.medium.com/lets-defend-soc145-ransomware-detected-d598621e26d3
 
-To run tests, run the following command
-
-```bash
-  npm run test
-```
-
-
-## Used By
-
-This project is used by the following companies:
-
-- Company 1
-- Company 2
-
-
-## Acknowledgements
-
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
